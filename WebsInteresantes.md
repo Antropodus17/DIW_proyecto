@@ -71,3 +71,4 @@ Designspiration
 Inspiration tool. You can pick up to 5 colors and search images matching your query
 ‍
 https://www.flowmapp.com/blog/qa/60-30-10-rule
+https://www.flowmapp.com/blog/qa/20-basic-typographic-terms-ui
