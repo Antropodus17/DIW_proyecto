@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 50vh;
+    max-width: fit-content;
+
+    border: dotted black 2px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.white {
+    background-color: white;
+}
