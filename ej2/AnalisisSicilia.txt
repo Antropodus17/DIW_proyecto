@@ -1,0 +1,7 @@
+En la estructura vemos que está divida en tres grandes bloques, hay un header que se divide en tres partes, una primera parte donde aparecen los teléfonos de contacto de la empresa, la parte central, donde aparece tanto el logo del restaurante como el menú de navegación. Por último, en el lado derecho sale otra especie de logo.
+
+En el medio de la página web hay un body donde van saliendo imágenes con algo de texto sobre la empresa.
+
+Por último punto acerca de la estructura, hay un footer que está dividido en dos, un botón para realizar un pedido y un texto donde especifican las ciudades de sus restaurantes.
+
+Para paleta de color, observamos claramente que combinan el azul con el blanco y esto se ve reflejado tanto en toda la página web, como en su propio logotipo.
