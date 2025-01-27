@@ -92,3 +92,22 @@ https://www.goiko.com/es/
 https://sabroso.netlify.app/
 https://devotoburger.com/
 SoftBurguer
+PARA ESTRUCTURA
+https://wfbumznz.dora.run
+
+PARA FOTOS
+https://freepik.com/ai
+
+PARA LOGOS
+kittl.com
+https://svgl.app/
+
+PARA TIPOGRAFIAS
+fontshare.com
+
+Colores web IA:
+
+#F6F5F4 : Gris palido (blanco?)
+#010101 : Negro
+#302F21 : Gris oscuro (negruzco)
+#FBF2EA: Blanco amarillento fondo?
