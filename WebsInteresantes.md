@@ -60,3 +60,14 @@ Animaciones css
 https://youtube.com/shorts/GKLBooTlNkQ?si=fK0C-jEnm1zgL5En
 
 [Crear Logos Gratis - Creador de logos - Free Logo Design](https://es.freelogodesign.org/)
+
+Coolors.co
+Colors generator
+Kuler
+Color wheel from Adobe
+Paletton
+Similar to Kuler, but you are not limited to 5 tones
+Designspiration
+Inspiration tool. You can pick up to 5 colors and search images matching your query
+‍
+https://www.flowmapp.com/blog/qa/60-30-10-rule
