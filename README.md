@@ -12,5 +12,7 @@ Italiano
 
 4. Creacion páginas web
 
+5. bootstrap
+
 ## RESTRICCIONES 
 No dinamismo.
