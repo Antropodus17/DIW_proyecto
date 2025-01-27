@@ -1,0 +1,8 @@
+- Titulos / cabeceras: Italianno
+https://fonts.google.com/specimen/Italianno
+
+- Cuerpo: Domain Display narrow Regular Italic
+https://font.download/font/domaine-display-narrow
+
+- Footer: Domain Display narrow Semibold Italic
+https://font.download/font/domaine-display-narrow
