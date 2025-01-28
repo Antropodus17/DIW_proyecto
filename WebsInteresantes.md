@@ -116,3 +116,6 @@ https://www.latagliatella.es/
 
 NUESTRA INSPO
 https://5wnfrgju.dora.run/
+
+mas grid
+https://css-tricks.com/snippets/css/complete-guide-grid/
