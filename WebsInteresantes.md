@@ -71,3 +71,43 @@ Designspiration
 Inspiration tool. You can pick up to 5 colors and search images matching your query
 ‍
 https://www.flowmapp.com/blog/qa/60-30-10-rule
+https://www.flowmapp.com/blog/qa/20-basic-typographic-terms-ui
+Colores
+https://uicolors.app/create
+https://coolors.co/
+https://colorhunt.co/
+
+https://www.khroma.co/train
+https://colors.muz.li/#google_vignette
+Iconos
+https://fontawesome.com/icons
+Estructura
+https://refero.design/
+LOGOS
+https://svgl.app/directory/framework
+
+https://laburgueria.com/santiago
+https://thechampionsburger.es/
+https://www.goiko.com/es/
+https://sabroso.netlify.app/
+https://devotoburger.com/
+SoftBurguer
+PARA ESTRUCTURA
+https://wfbumznz.dora.run
+
+PARA FOTOS
+https://freepik.com/ai
+
+PARA LOGOS
+kittl.com
+https://svgl.app/
+
+PARA TIPOGRAFIAS
+fontshare.com
+
+Colores web IA:
+
+#F6F5F4 : Gris palido (blanco?)
+#010101 : Negro
+#302F21 : Gris oscuro (negruzco)
+#FBF2EA: Blanco amarillento fondo?
