@@ -111,3 +111,8 @@ Colores web IA:
 #010101 : Negro
 #302F21 : Gris oscuro (negruzco)
 #FBF2EA: Blanco amarillento fondo?
+
+https://www.latagliatella.es/
+
+NUESTRA INSPO
+https://5wnfrgju.dora.run/
