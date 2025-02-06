@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html body {
     width: 99vw;
     height: 99vh;
@@ -58,4 +59,37 @@ header {
 
 footer {
     background-color: aquamarine;
+=======
+@import "./variables.css";
+
+html body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* IMAGEN DE FONDO */
+#home {
+	min-width: 90%;
+	min-height: 90%;
+	background-image: url("./imgs/web/home.jpeg");
+}
+
+/* Colores de Titulo */
+#home > h1:nth-child(1) > span:nth-child(1) {
+	color: var(--rojo);
+}
+#home > h1 > span:nth-child(2) {
+	color: var(--verde);
+}
+
+header {
+>>>>>>> luis
 }
