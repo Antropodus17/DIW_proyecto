@@ -27,6 +27,3 @@ body {
 #home > h1 > span:nth-child(2) {
 	color: var(--verde);
 }
-
-header {
-}

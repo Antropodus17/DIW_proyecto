@@ -1,6 +1,8 @@
+@import "../variables.css";
 html body {
 	width: 99vw;
 	height: 99vh;
+	font-family: "Italianno";
 }
 
 body {
@@ -13,7 +15,10 @@ main {
 	display: flex;
 	flex-direction: row-reverse;
 }
-
+h2 {
+	font-family: "Italianno", serif;
+}
 form {
 	display: flex;
 }
+@import url("https://fonts.googleapis.com/css2?family=Italianno");
