@@ -1,0 +1,27 @@
+@import html body {
+	width: 99vw;
+	height: 99vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.container {
+	width: 150px;
+	height: 450px;
+	border: 2px solid;
+}
+.green {
+	background-color: green;
+}
+.red {
+	background-color: red;
+}
+.red-border {
+	border-color: red;
+}
+.green-border {
+	border-color: green;
+}
