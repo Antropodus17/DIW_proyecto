@@ -8,3 +8,12 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+main {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+form {
+	display: flex;
+}
