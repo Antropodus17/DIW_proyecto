@@ -6,9 +6,8 @@ html body {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	display: grid;
+	grid-auto-rows: max-content;
 }
 
 main {
