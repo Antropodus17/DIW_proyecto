@@ -1,75 +1,39 @@
-@import "../variables.css";
-
 #menu {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 
-#menu1, #menu2 {
-    display: flex;
-    align-items: center; /* Alinea los elementos al inicio */
-    justify-content: center; /* Alinea los elementos al inicio */
-    padding: 20px; /* Elimina padding entre los artículos */
-    margin: 0; /* Elimina márgenes entre los artículos */
-}
-
-/* El texto se encuentra a la izquierda y la imagen a la derecha en menu1 */
-#menu1 {
-    flex-direction: row;
-}
-
-/* El texto se encuentra a la derecha y la imagen a la izquierda en menu2 */
+#menu1,
 #menu2 {
-    flex-direction: row;
-    justify-content: flex-end; /* Coloca la imagen a la izquierda y el texto a la derecha */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-/* Establece el ancho del div de texto y de la imagen */
-#menu1 div, #menu2 div {
-    width: 50%;
+#menu1 div,
+#menu2 div {
+	width: 50%;
 }
 
 /* Para que los títulos estén encima de los párrafos */
 #menu1 div:first-child,
 #menu2 div:last-child {
-    display: flex;
-    flex-direction: column; /* Apila el H1 encima del P */
+	display: flex;
+	flex-direction: column;
 }
 
-/* Sin espacio entre menu1 y menu2 */
-#menu1, #menu2 {
-    margin-bottom: 0;
+#menu1 img,
+#menu2 img {
+	width: 100%;
+	height: auto;
 }
 
-/* Diseño de los textos dentro de menu1 y menu2 */
-#menu1 h1, #menu2 h1,
-#menu1 p, #menu2 p {
-    padding: 50px;
+#curated-offerings {
+	width: 80%;
+	text-align: center;
 }
 
-/* Estilos específicos para el menu1 */
-#menu1 {
-    background-color: var(--blanco);
-}
-
-#menu1 > h1 {
-    color: var(--rojo);
-	font-family:var(titulo);
-}
-
-#menu1 > p {
-    color: var(--texto);
-}
-
-/* Estilos específicos para el menu2 */
-#menu2 {
-    background-color: var(--rojo);
-}
-
-#menu2 h1, #menu2 p {
-    color: var(--blanco);
-}
 
 #menu-grid {
     display: grid;
