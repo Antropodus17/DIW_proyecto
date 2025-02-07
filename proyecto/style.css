@@ -2,89 +2,88 @@
 
 html,
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 div {
-    width: 100vw;
-    height: 100vh;
+	width: 100vw;
+	height: 100vh;
 }
 
 /* IMAGEN DE FONDO */
 #home {
-    background-image: url("./imgs/web/home.jpeg");
-    background-size: cover;
-    background-position: center;
+	background-image: url("./imgs/web/home.jpeg");
+	background-size: cover;
+	background-position: center;
 }
 
 /* Colores de Titulo */
 #home > h1:nth-child(1) > span:nth-child(1) {
-    color: var(--rojo);
+	color: var(--rojo);
 }
 #home > h1 > span:nth-child(2) {
-    color: var(--verde);
+	color: var(--verde);
 }
 
 header {
-    background-color: var(--rojo);
-    padding: 1rem;
+	background-color: var(--rojo);
+	padding: 1rem;
 }
 
 .header-logo > p:nth-child(2) {
-    color: var(--blanco);
-    font-family: ;
-    font-size: 2.5rem;
+	color: var(--blanco);
+	font-size: 2.5rem;
 }
 
 header {
-    background-color: rgb(245, 197, 197);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	background-color: rgb(245, 197, 197);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 header > nav > ul {
-    height: max-content;
-    width: 15vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+	height: max-content;
+	width: 15vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .header-logo {
-    height: 10vh;
-    width: 8vw;
-    display: flex;
-    flex-direction: row;
+	height: 10vh;
+	width: 8vw;
+	display: flex;
+	flex-direction: row;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 #footer-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 /*QUITADO LA DECORACIONES DE LOS LI Y LOS A*/
 li > a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 li > a:hover {
-    font-weight: bold;
+	font-weight: bold;
 }
 span {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 li::marker {
-    color: transparent;
+	color: transparent;
 }
