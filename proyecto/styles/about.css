@@ -4,24 +4,114 @@ html body {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--blanco);
 }
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 60px;
+    color: var(--rojo);
+	margin-top: auto;
+}
+
+.texto {
+    color: var(--texto);
+    font-family: 'Golos Text', sans-serif;
+	padding: auto;
+	margin-top: auto;
+	align-items: center;
+	padding-left: 20px;
+}
+
 .container {
-	width: 150px;
-	height: 450px;
-	border: 2px solid;
+    width: 278.98px;
+    height: 336.96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    border-bottom: 4px solid; 
 }
+
 .green {
-	background-color: green;
+    background-color: var(--verde);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+	word-wrap: break-word
 }
+
 .red {
-	background-color: red;
+    background-color: var(--rojo);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+	word-wrap: break-word
 }
+
 .red-border {
-	border-color: red;
+    border:1.5px solid red; 
+	word-wrap: break-word
 }
+
 .green-border {
-	border-color: green;
+    border:1.5px solid green; 
+	word-wrap: break-word
+}
+
+.img {
+    width: 80%;
+    height: auto; 
+    max-width: 642px; 
+    max-height: 649px; 
+}
+
+.group-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-2 {
+    display: flex;
+    justify-content: center;
+	align-items: flex-start;
+	padding: auto;
+	margin: auto;
+	margin-top: 75px;
+    width: 100%; 
+}
+
+.container-wrapper {
+    display: flex;
+    gap: 20px; 
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text-container {
+	color: var(--texto-footer);
+	font-family: 'Work Sans', sans-serif;
+	align-items: flex-start;
+	overflow-wrap: break-word
+}
+
+.text-container-1 {
+	color: #888888;
+	font-family: 'Work Sans', sans-serif;
+	align-items: flex-start;
+	overflow-wrap: break-word
 }
