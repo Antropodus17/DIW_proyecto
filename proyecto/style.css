@@ -1,18 +1,8 @@
 @import "./variables.css";
 /* Estilos generales */
 * {
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
-=======
-<<<<<<< HEAD
-	margin: 0;
-	padding: 0;
-=======
-	width: 99vw;
-	height: 99vh;
->>>>>>> 00d1c03 (Estructura web creada)
->>>>>>> b26d41b (About us page almost finished)
 }
 
 div {
@@ -22,17 +12,18 @@ div {
 
 /* IMAGEN DE FONDO */
 #home {
-<<<<<<< HEAD
     background-image: url("./imgs/web/home.jpeg");
     background-size: cover;
     background-position: center;
-=======
-	min-width: 90%;
-	min-height: 90%;
-	background-image: url("./imgs/web/home.jpeg");
-	background-size: cover;
-	background-position: center;
->>>>>>> b26d41b (About us page almost finished)
+}
+/* HERO: Header + Main con fondo */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("imgs/web/home.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 
 /* Colores de Titulo */
@@ -45,7 +36,6 @@ div {
 
 /* Asegurar que el header esté bien posicionado */
 header {
-<<<<<<< HEAD
     background-color: var(--rojo);
     padding: 1rem;
 }
@@ -108,6 +98,4 @@ span {
 }
 li::marker {
     color: transparent;
-=======
->>>>>>> b26d41b (About us page almost finished)
 }
