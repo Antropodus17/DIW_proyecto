@@ -95,25 +95,31 @@ header {
 	justify-content: space-between;
 	align-items: center;
 
+	/* ZONA DEL LOGO  */
 	.header-logo {
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		/* TEXTO DEL LOGO */
 		p {
 			color: var(--blanco);
 			font-size: large;
 		}
+		/* IMAGEN LOGO */
 		img {
 			width: 50px;
 		}
 	}
+	/* ZONA DE NAVEGACION */
 	nav {
 		display: flex;
 		justify-content: flex-end;
+		/* LISTADO DEL NAV */
 		.nav-list {
 			display: flex;
 			list-style: none;
 			gap: 20px;
+			/* ENLACES NAV */
 			a {
 				font-size: 1.5rem;
 				text-decoration: none;
@@ -146,6 +152,7 @@ footer {
 	color: #fffcf1;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 2rem;
 	padding: 2rem;
 	z-index: 1; /* Asegura que los hijos estén por encima */
@@ -155,15 +162,19 @@ footer {
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		width: 18%;
 		img {
-			width: 60px;
+			width: 80px;
+		}
+		p {
+			width: 48%;
 		}
 	}
 	/* LISTA DE LINKS */
 	#footer-links {
 		display: flex;
 		justify-content: space-between;
-		width: 100%;
+		width: 40%;
 		ul {
 			list-style: none;
 			padding: 0;
