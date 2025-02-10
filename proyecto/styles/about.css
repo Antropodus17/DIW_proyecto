@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap');
+@import '../variables.css';
+
 html body {
 	width: 99vw;
 	height: 99vh;
