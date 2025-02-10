@@ -1,16 +1,9 @@
 :root {
 	--rojo: #730000;
 	--verde: #005136;
-	--blanco: #fffcf1;
+	--blanco: #fff;
+	--fondo: #fffcf1;
 	--texto: #a47575;
 	--texto-footer: #f1c9c7;
 	--negro: #000;
-	font-family: ;
 }
-@font-face {
-	font-family: "titulo";
-	src: url(https://fonts.google.com/specimen/Italianno);
-}
-@import url(https://font.download/font/domaine-display-narrow);
-@import url(://fonts.google.com/specimen/Molengo);
-@import url(https://fonts.google.com/specimen/Overlock);
