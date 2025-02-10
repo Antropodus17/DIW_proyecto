@@ -9,7 +9,22 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <article class="header-logo">
+            <img id="logo" src="../imgs/logo1.png" alt="Logo">
+            <p>P & B</p>
+        </article>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="header-links">
+            <ul class="nav-list">
+                <li><a href="/proyecto/index.html">Home</a></li>
+                <li><a href="/proyecto/pages/about_us.html">About</a></li>
+                <li><a href="/proyecto/pages/menu.html">Menu</a></li>
+                <li><a href="/proyecto/pages/galeria.html">Galeria</a></li>
+                <li><a href="/proyecto/pages/book.html" id="book">Book</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="group-1">
             <h2 class="title">Crafting culinari</h2>
@@ -34,7 +49,41 @@
             <img class="img" src="../imgs/galeria/freepik__imagen-de-un-plato-de-autntica-pasta-italiana-en-u__77345.jpeg" alt="pizza">
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <article class="footer-logo"> <!--Articulo para el logo y copyright symbol del footer-->
+            <img src="../imgs/logo1.png" alt="Logo">
+            <p>P & B</p>
+        </article>
+        <article id="footer-links">
+            <ul>
+                <li>
+                    <span>Quick Links</span>
+                </li>
+                <li><a href="/proyecto/index.html">Home</a></li>
+                <li><a href="/proyecto/pages/about_us.html">About</a></li>
+                <li><a href="/proyecto/pages/menu.html">Menu</a></li>
+                <li><a href="/proyecto/pages/contact_us.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <span>Our Company</span>
+                </li>
+                <li><a href="#about-us">About Us</a></li>
+                <li> Our Story</li>
+                <li>Sustainability</li>
+                <li>Careers</li>
+            </ul>
+            <ul>
+                <li>
+                    <span>Connect with us</span>
+                </li>
+                <li><a href="http://facebook.com">Facebook</a></li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+            </ul>
+        </article>
+    </footer>
 </body>
 
 </html>
