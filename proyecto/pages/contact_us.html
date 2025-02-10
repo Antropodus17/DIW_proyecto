@@ -4,46 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/cabeceras_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Molengo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <article class="header-logo">
+            <img id="logo" src="../imgs/logo1.png" alt="Logo">
+            <p>P & B</p>
+        </article>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="header-links">
+            <ul class="nav-list">
+                <li><a href="/proyecto/index.html">Home</a></li>
+                <li><a href="/proyecto/pages/about_us.html">About</a></li>
+                <li><a href="/proyecto/pages/menu.html">Menu</a></li>
+                <li><a href="/proyecto/pages/galeria.html">Galeria</a></li>
+                <li><a href="/proyecto/pages/book.html" id="book">Book</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-
         <form action="" method="post">
-            <h2>Contact Us - Book Now</h2>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="First Name">
+            <h2 class="titulo">Contact Us - Book Now</h2>
 
+            <div class="campo">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" placeholder="First Name">
+            </div>
 
-            <label for="lastname">Lastname:</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+            <div class="campo">
 
-            <label for="phone">Phone:</label>
-            <input type="text" name="phone" id="phone" placeholder="Phone">
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-
-            <label for="message">Other Info:</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <label for="lastname">Lastname:</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+            </div>
+            <div class="campo">
+                <label for="phone">Phone:</label><br>
+                <input type="text" name="phone" id="phone" placeholder="Phone">
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="campo">
+                <label for="message">Other Info:</label><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
 
             <button type="submit">Send</button>
         </form>
         <section id="mapa">
-            <h2>Find Us</h2>
-            <div style="width: 40%">
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            <h2 class="titulo">Find Us</h2>
+            <div style="width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=42.87850985536948,%20-8.547408305097404+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                         href="https://www.gps.ie/car-satnav-gps/">Car Navigation
                         Systems</a></iframe><!-- MAPA DE GOOGLE, EVITAR TOCAR EL SRC-->
             </div>
             <ul>
-                <li>where</li>
-                <li>Phone</li>
-                <li>mail</li>
+                <li>adkvjdsanvkdasfnvkadnvn jklvdflnvdn jjdvn </li>
+                <li>+34 999-99-99-99</li>
+                <li>pasta_e_basta@domain_name.com</li>
             </ul>
         </section>
     </main>

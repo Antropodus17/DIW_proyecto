@@ -1,0 +1,96 @@
+footer {
+	position: relative;
+	background: var(--rojo);
+	opacity: 0.9;
+	color: #fffcf1;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+	z-index: 1; /* Asegura que los hijos estén por encima */
+
+	/* LOGO DEL FOOTER  */
+	.footer-logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 18%;
+		img {
+			width: 80px;
+		}
+		p {
+			font-size: x-large;
+			width: 48%;
+		}
+	}
+	/* LISTA DE LINKS */
+	#footer-links {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		margin-left: 8%;
+		ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			li {
+				margin-bottom: 8px;
+				/* TITULOS DE LISTA */
+				span {
+					font-weight: bold;
+					color: var(--blanco);
+					font-size: 1.1rem;
+				}
+				/* ENLACES */
+				a {
+					color: var(--blanco);
+					text-decoration: none;
+					transition: color 0.3s ease;
+				}
+				a:hover {
+					text-decoration: underline;
+					/*TODO TRANSISION A REVISAR */
+					transition: text-decoration-thickness 0.3 ease;
+				}
+			}
+		}
+	}
+}
+
+footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--rojo);
+	filter: brightness(0.7); /* Oscurece solo el fondo */
+	z-index: -1; /* Coloca la capa detrás del contenido */
+}
+
+/* Responsive: Mostrar en columna en móviles */
+@media (max-width: 768px) {
+	footer {
+		grid-template-columns: 1fr;
+		text-align: center;
+
+		.footer-logo {
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+
+			img {
+				width: 50px; /* Ajusta el tamaño en móviles */
+			}
+		}
+
+		#footer-links {
+			grid-template-columns: 1fr;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

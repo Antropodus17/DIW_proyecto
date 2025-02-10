@@ -1,32 +1,67 @@
 @import "./variables.css";
+@import "./header.css";
+@import "./footer.css";
 
-html body {
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* #TODO cambiar fuente */
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
-
-/* IMAGEN DE FONDO */
-#home {
-	min-width: 90%;
-	min-height: 90%;
-	background-image: url("./imgs/web/home.jpeg");
-}
-
-/* Colores de Titulo */
-#home > h1:nth-child(1) > span:nth-child(1) {
-	color: var(--rojo);
-}
-#home > h1 > span:nth-child(2) {
-	color: var(--verde);
-}
-
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* HERO: Header + Main con fondo */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("imgs/web/home.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Hace que el main ocupe todo el espacio restante */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    h1 {
+        text-align: center;
+        font-family: "Italianno";
+        color: var(--fondo);
+        font-size: 6rem;
+        grid-column: span 2 / span 2;
+        grid-row-start: 3;
+        span {
+            font-family: inherit;
+        }
+        span:nth-child(1) {
+            color: var(--rojo);
+        }
+        span:nth-child(2) {
+            color: var(--verde);
+        }
+    }
+}
+
+/* MENÚ HAMBURGUESA */
+.menu-btn {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
