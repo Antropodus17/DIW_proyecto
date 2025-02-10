@@ -28,6 +28,8 @@
 #menu2 {
     flex-direction: row;
     justify-content: flex-end;
+    padding-right: 50px; /* Reduce el espacio extra a la derecha */
+
 }
 
 #menu1 div, #menu2 div {
@@ -40,9 +42,41 @@
     flex-direction: column;
 }
 
+#menu1 div h1, #menu2 div h1 {
+    margin-bottom: 30px; /* Asegura espacio debajo del h1 */
+    display: block;
+}
+
+#menu1 div p, #menu2 div p {
+    margin-top: 20px; /* Añade espacio por encima del p */
+}
 
 #menu1, #menu2 {
     margin-bottom: 0;
+}
+
+#texto1 > h1{
+    color: var(--rojo);
+}
+
+#texto1 > p{
+    color: var(--texto);
+}
+
+#menu2 h1, #menu2 p {
+    padding-right: 75px; /* Asegura que ocupe el máximo espacio */
+}
+
+
+#comida1, #comida2 {
+    width: 591px;
+    height: 400px;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+}
+
+#comida2{
+    margin-right: 150px;
+
 }
 
 /* Diseño de los textos dentro de menu1 y menu2 */
@@ -50,15 +84,10 @@
     padding-right: 50px;
 }
 
-#menu2 h1, #menu2 p{
-    padding-left: 50px;
-    padding-right: 300px;
-} 
-
-#comida2 {
-    width: 591px; /* Forzar el ancho a 591px */
-    height: auto;
+#texto2 > h1{
+    margin-bottom: 200px;
 }
+
 
 /* Estilos específicos para el menu1 */
 #menu1 {
@@ -68,14 +97,11 @@
 #menu1 > h1 {
     color: var(--rojo);
 	font-family:var(titulo);
+    margin-bottom: 500px;
 }
 
 #menu1 > p {
     color: var(--texto);
-}
-
-#comida2{
-    padding-right: 180px;
 }
 
 h1 {
@@ -96,12 +122,6 @@ p{
     justify-content: flex-end;
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
     
-}
-
-#menu2 img {
-    width: 45.115% !important;  /* Asegura que la imagen ocupe el 100% del contenedor */
-    height: auto; /* Mantén la relación de aspecto */
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
 }
 
 #menu2 h1, #menu2 p {
@@ -133,12 +153,19 @@ p{
 
 .menu-item p {
     margin-top: 10px;
+    font-size: 48px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    color: var(--rojo);
+    text-align: center;
 }
+
 
 #menu-buttons {
     margin-top: 20px;
+    padding: 40px;
     display: flex;
-    gap: 20px;
+    gap: 148px;
     justify-content: center;
 }
 
@@ -150,4 +177,47 @@ button {
     border-radius: 5px;
     background-color: #444;
     color: white;
+}
+
+#curated-offerings{
+    background-color: var(--blanco);
+}
+
+.menu-item img{
+    opacity: 0.85;
+    width: 355px;
+}
+
+#tituloImgs{
+    display: flex;
+    justify-content: center;
+    color: var(--rojo);
+    font-family: 'Work Sans', sans-serif;
+    padding: 40px;
+    font-size: 50px;
+    font-weight: 600; /* Semi Bold */
+}
+
+#boton1{
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-style: solid;
+    border-color: var(--rojo);
+}
+
+#boton1:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+#boton2{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-style: solid;
+    border-color: var(--rojo);
+}
+
+#boton2:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
 }
