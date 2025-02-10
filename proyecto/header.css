@@ -1,0 +1,41 @@
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.header-logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		p {
+			color: var(--blanco);
+			font-size: large;
+		}
+		img {
+			width: 50px;
+		}
+	}
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		.nav-list {
+			display: flex;
+			list-style: none;
+			gap: 20px;
+			a {
+				text-decoration: none;
+				color: white;
+				padding: 0.5rem;
+			}
+			a:hover {
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 5px;
+			}
+		}
+	}
+}
