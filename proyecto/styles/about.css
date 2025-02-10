@@ -110,13 +110,13 @@ main {
 .text-container {
 	color: var(--texto-footer);
 	font-family: 'Work Sans', sans-serif;
-	align-items: flex-start;
+	align-items: center;
 	overflow-wrap: break-word
 }
 
 .text-container-1 {
 	color: #888888;
 	font-family: 'Work Sans', sans-serif;
-	align-items: flex-start;
+	align-items: center;
 	overflow-wrap: break-word
 }
