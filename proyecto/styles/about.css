@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap');
+@import '../variables.css';
+
 html body {
 	width: 99vw;
 	height: 99vh;
@@ -7,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--blanco);
+    background-color: var(--fondo);
 }
 
 .title {
@@ -25,7 +29,8 @@ body {
 	padding: auto;
 	margin-top: auto;
 	align-items: center;
-	padding-left: 20px;
+	padding-left: 50px;
+	margin-bottom: 60px;
 }
 
 .container {
@@ -58,12 +63,12 @@ body {
 }
 
 .red-border {
-    border:1.5px solid red; 
+    border:1.5px solid var(--rojo); 
 	word-wrap: break-word
 }
 
 .green-border {
-    border:1.5px solid green; 
+    border:1.5px solid var(--verde); 
 	word-wrap: break-word
 }
 
@@ -105,13 +110,13 @@ main {
 .text-container {
 	color: var(--texto-footer);
 	font-family: 'Work Sans', sans-serif;
-	align-items: flex-start;
+	align-items: center;
 	overflow-wrap: break-word
 }
 
 .text-container-1 {
 	color: #888888;
 	font-family: 'Work Sans', sans-serif;
-	align-items: flex-start;
+	align-items: center;
 	overflow-wrap: break-word
 }

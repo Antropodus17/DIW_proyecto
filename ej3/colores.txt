@@ -8,3 +8,7 @@ COLORES
 #FFFCF1
 #E9E9E9
 #3B3F3F
+<<<<<<< HEAD
+#B57249
+=======
+>>>>>>> luis
