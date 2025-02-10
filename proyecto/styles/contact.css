@@ -1,69 +1,76 @@
 @import "../variables.css";
+@import "../header.css";
+
+header {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html body {
-	width: 100vw;
-	height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .titulo {
-	font-family: "Italianno";
-	font-size: 3 rem;
+    font-family: "Italianno";
+    font-size: 3 rem;
 }
 
 body {
-	display: grid;
-	grid-auto-rows: max-content;
-	grid-auto-columns: auto;
-	background-color: var(--fondo);
-	font-size: 1.5rem;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-auto-columns: auto;
+    background-color: var(--fondo);
+    font-size: 1.5rem;
 }
 
 main {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 form {
-	display: flex;
-	width: 20%;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	background-color: var(--rojo);
-	color: var(--blanco);
-	padding: 2%;
-	border-radius: 25px;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 2%;
+    border-radius: 25px;
 }
 form > input {
-	width: 50%;
+    width: 50%;
 }
 
 section#mapa {
-	width: 35%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	color: var(--rojo);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--rojo);
 }
 main > form,
 main > section {
-	margin: 7%;
+    margin: 7%;
 }
 
 section#mapa > div {
-	border: 3px solid var(--rojo);
-	width: 100%;
-	height: 60%;
+    border: 3px solid var(--rojo);
+    width: 100%;
+    height: 60%;
 }
 
 section#mapa > div,
 iframe {
-	border-radius: 20px;
+    border-radius: 20px;
 }
 /* main {
 	border-bottom: 2px solid var(--negro);
