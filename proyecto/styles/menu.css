@@ -1,37 +1,134 @@
+@import "../variables.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #menu {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 
-#menu1,
+#menu1, #menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+#menu1 {
+    flex-direction: row;
+}
+
+
 #menu2 {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 50px; /* Reduce el espacio extra a la derecha */
+
 }
 
-#menu1 div,
-#menu2 div {
-	width: 50%;
+#menu1 div, #menu2 div {
+    width: 50%;
 }
 
-/* Para que los títulos estén encima de los párrafos */
 #menu1 div:first-child,
 #menu2 div:last-child {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-#menu1 img,
-#menu2 img {
-	width: 100%;
-	height: auto;
+#menu1 div h1, #menu2 div h1 {
+    margin-bottom: 30px; /* Asegura espacio debajo del h1 */
+    display: block;
 }
 
-#curated-offerings {
-	width: 80%;
-	text-align: center;
+#menu1 div p, #menu2 div p {
+    margin-top: 20px; /* Añade espacio por encima del p */
+}
+
+#menu1, #menu2 {
+    margin-bottom: 0;
+}
+
+#texto1 > h1{
+    color: var(--rojo);
+}
+
+#texto1 > p{
+    color: var(--texto);
+}
+
+#menu2 h1, #menu2 p {
+    padding-right: 75px; /* Asegura que ocupe el máximo espacio */
+}
+
+
+#comida1, #comida2 {
+    width: 591px;
+    height: 400px;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+}
+
+#comida2{
+    margin-right: 150px;
+
+}
+
+/* Diseño de los textos dentro de menu1 y menu2 */
+#menu1 h1, #menu1 p{
+    padding-right: 50px;
+}
+
+#texto2 > h1{
+    margin-bottom: 200px;
+}
+
+
+/* Estilos específicos para el menu1 */
+#menu1 {
+    background-color: var(--blanco);
+}
+
+#menu1 > h1 {
+    color: var(--rojo);
+	font-family:var(titulo);
+    margin-bottom: 500px;
+}
+
+#menu1 > p {
+    color: var(--texto);
+}
+
+h1 {
+    font-size: 71px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600; /* Semi Bold */
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Estilos específicos para el menu2 */
+#menu2 {
+    background-color: var(--rojo);
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    
+}
+
+#menu2 h1, #menu2 p {
+    color: var(--blanco);
+    margin-bottom: 0; /* Elimina el margen entre h1 y p */
+    padding-bottom: 0; /* Asegúrate de que no haya padding extra */
+    justify-content: center;
 }
 
 
@@ -56,12 +153,19 @@
 
 .menu-item p {
     margin-top: 10px;
+    font-size: 48px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    color: var(--rojo);
+    text-align: center;
 }
+
 
 #menu-buttons {
     margin-top: 20px;
+    padding: 40px;
     display: flex;
-    gap: 20px;
+    gap: 148px;
     justify-content: center;
 }
 
@@ -73,4 +177,47 @@ button {
     border-radius: 5px;
     background-color: #444;
     color: white;
+}
+
+#curated-offerings{
+    background-color: var(--blanco);
+}
+
+.menu-item img{
+    opacity: 0.85;
+    width: 355px;
+}
+
+#tituloImgs{
+    display: flex;
+    justify-content: center;
+    color: var(--rojo);
+    font-family: 'Work Sans', sans-serif;
+    padding: 40px;
+    font-size: 50px;
+    font-weight: 600; /* Semi Bold */
+}
+
+#boton1{
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-style: solid;
+    border-color: var(--rojo);
+}
+
+#boton1:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+#boton2{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-style: solid;
+    border-color: var(--rojo);
+}
+
+#boton2:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
 }
