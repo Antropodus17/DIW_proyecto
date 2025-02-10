@@ -10,36 +10,50 @@
 </head>
 
 <body>
+    <header>
+        <article class="header-logo">
+            <img id="logo" src="./imgs/logo1.png" alt="Logo">
+            <p>P & B</p>
+        </article>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="header-links">
+            <ul class="nav-list">
+                <li><a href="/proyecto/index.html">Home</a></li>
+                <li><a href="/proyecto/pages/about_us.html">About</a></li>
+                <li><a href="/proyecto/pages/menu.html">Menu</a></li>
+                <li><a href="/proyecto/pages/galeria.html">Galeria</a></li>
+                <li><a href="/proyecto/pages/book.html" id="book">Book</a></li>
+            </ul>
+        </nav>
+    </header>
     <section id="menu">
         <article id="menu1">
             <div id="texto1">
                 <h1>Indulge in the Art of Italian</h1>
 
-                    <p>From Classic Favorites to Innovative Combinations, Our Menu Offers a Diverse Array of Delectable
-                        Options
-                        Catering to Every Palate. Immerse Yourself in the Culinary Exploration and Savor the Flavors
-                        that Ignite
-                        the
-                        Senses</p>
-                    <img id="comida1" src="../imgs/web/menu-1.jpeg" alt="Comida1" />
+                <p>From Classic Favorites to Innovative Combinations, Our Menu Offers a Diverse Array of Delectable Options
+                    Catering to Every Palate. Immerse Yourself in the Culinary Exploration and Savor the Flavors that Ignite
+                    the Senses</p>
             </div>
+            <img id="comida1" src="../imgs/web/menu-1.jpeg" alt="Comida1" width="591px"/>
+        </article>
 
-            <div id="menu2">
-                <img id="comida2" src="../imgs/web/menu-2.jpeg" alt="Comida2" />
+        <article id="menu2">
+            <img id="comida2" src="../imgs/web/menu-2.jpeg" alt="Comida2" width="591px"/>
+            <div id="texto2">
                 <h1>Elevating the Art of Dining</h1>
 
                 <p>Elevate Your Dining Experience with Our Meticulously Crafted Dishes, Where Each Ingredient is
-                    Thoughtfully Selected and Harmoniously Blended to Tantalize Your Taste Buds and Delight Your Senses
-                </p>
+                    Thoughtfully Selected and Harmoniously Blended to Tantalize Your Taste Buds and Delight Your Senses</p>
             </div>
         </article>
     </section>
 
     <div id="curated-offerings">
-        <h2>Explore Our Curated Offerings</h2>
+        <h2 id="tituloImgs">Explore Our Curated Offerings</h2>
         <div id="menu-grid">
             <div class="menu-item">
-                <img src="../imgs/web/fetuccini.jpg" alt="Fetuccini">
+                <img src="../imgs/web/fetuccini.jpeg" alt="Fetuccini">
                 <p><em>Fetuccini</em></p>
             </div>
             <div class="menu-item">
@@ -47,23 +61,15 @@
                 <p><em>Tiramisu</em></p>
             </div>
             <div class="menu-item">
-                <img src="../imgs/web/
-                " alt="Tagliarini">
+                <img src="../imgs/web/tagliarini.jpeg" alt="Tagliarini">
                 <p><em>Tagliarini</em></p>
             </div>
             <div class="menu-item">
-                <img src="../imgs/web/papardelle.jpg" alt="Papardelle">
+                <img src="../imgs/web/papardelle.jpeg" alt="Papardelle">
                 <p><em>Papardelle</em></p>
             </div>
             <div class="menu-item">
                 <img src="../imgs/web/ravioli.jpeg
-=======
-                <img src=" ../img/papardelle.jpg" alt="Papardelle">
-                <p><em>Papardelle</em></p>
-            </div>
-            <div class="menu-item">
-                <img src="../img/freepik__the-style-is-candid-image-photography-with-natural__77344.jpeg
->>>>>>> 00d1c03 (Estructura web creada)
                 " alt="Ravioli">
                 <p><em>Ravioli</em></p>
             </div>
@@ -73,8 +79,12 @@
             </div>
         </div>
         <div id="menu-buttons">
-            <button>Savor the Moment</button>
-            <button>Discover the Menu</button>
+            <a href="book.html">
+                <button id="boton1" src="book.html">Savor the Moment</button>
+            </a>
+            <a href="book.html">
+                <button id="boton2" src="galeria.html">Discover the Menu</button>
+            </a>
         </div>
     </div>
 </body>
