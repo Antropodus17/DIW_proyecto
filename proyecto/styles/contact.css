@@ -43,7 +43,7 @@ form {
     background-color: var(--rojo);
     color: var(--blanco);
     padding: 2%;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 form > input {
     width: 50%;
@@ -64,14 +64,21 @@ main > section {
 
 section#mapa > div {
     border: 3px solid var(--rojo);
-    width: 100%;
-    height: 60%;
+    width: 60%;
+    height: 100%;
 }
 
 section#mapa > div,
 iframe {
-    border-radius: 20px;
+    border-radius: 5px;
 }
 /* main {
 	border-bottom: 2px solid var(--negro);
 } */
+
+textarea,
+input {
+    position: relative;
+    width: 80%;
+    height: 40%;
+}
