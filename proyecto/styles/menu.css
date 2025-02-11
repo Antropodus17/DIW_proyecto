@@ -1,11 +1,22 @@
 @import "../variables.css";
 @import "../header.css";
-
+@import "../footer.css";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header{
+    background-color: var(--rojo);
+}
+
+#header-links > ul > li > a:hover {
+    color: var(--fondo);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    opacity: 0.8;
 }
 
 #menu {
@@ -93,7 +104,7 @@
 
 /* Estilos específicos para el menu1 */
 #menu1 {
-    background-color: var(--blanco);
+    background-color: var(--fondo);
 }
 
 #menu1 > h1 {
@@ -127,7 +138,7 @@ p{
 }
 
 #menu2 h1, #menu2 p {
-    color: var(--blanco);
+    color: var(--fondo);
     margin-bottom: 0; /* Elimina el margen entre h1 y p */
     padding-bottom: 0; /* Asegúrate de que no haya padding extra */
     justify-content: center;
@@ -182,7 +193,7 @@ button {
 }
 
 #curated-offerings{
-    background-color: var(--blanco);
+    background-color: var(--fondo);
 }
 
 .menu-item img{
@@ -201,7 +212,7 @@ button {
 }
 
 #boton1{
-    background-color: var(--blanco);
+    background-color: var(--fondo);
     color: var(--rojo);
     border-style: solid;
     border-color: var(--rojo);
@@ -209,17 +220,88 @@ button {
 
 #boton1:hover {
     background-color: var(--rojo);
-    color: var(--blanco);
+    color: var(--fondo);
 }
 
 #boton2{
     background-color: var(--rojo);
-    color: var(--blanco);
+    color: var(--fondo);
     border-style: solid;
     border-color: var(--rojo);
 }
 
 #boton2:hover {
-    background-color: var(--blanco);
+    background-color: var(--fondo);
     color: var(--rojo);
+}
+
+/* Responsive solo para pantallas de máximo 780px */
+@media (max-width: 780px) {
+    #menu1, #menu2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu1 div, #menu2 div {
+        width: 100%;
+    }
+
+    #menu1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #texto1 h1, #texto1 p, #texto2 h1, #texto2 p {
+        margin-right: 0;
+    }
+
+    #comida1, #comida2 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #menu1 > #texto1{
+        margin-left: 50px;
+    }
+
+    #menu2 > #comida2{
+        margin-left: 180px;
+    }
+
+    #menu2 > #texto2{
+        margin-left: 100px;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #menu-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    button {
+        width: auto;
+        max-width: 250px;
+        font-size: 14px;
+    }
 }
