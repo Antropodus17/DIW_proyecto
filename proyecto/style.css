@@ -55,6 +55,17 @@ main {
         }
     }
 }
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        h1 {
+            font-size: 4rem;
+            grid-column: span 1 / span 1;
+            grid-row-start: 4;
+        }
+    }
+}
 
 /* MENÚ HAMBURGUESA */
 .menu-btn {
