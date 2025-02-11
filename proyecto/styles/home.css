@@ -1,6 +1,7 @@
-@import "./variables.css";
-@import "./header.css";
-@import "./footer.css";
+@import "../templates/colores.css";
+@import "../templates/fuentes.css";
+@import "../templates/header.css";
+@import "../templates/footer.css";
 
 /* Estilos generales */
 * {
@@ -21,18 +22,19 @@ header {
     top: 0;
     left: 0;
 }
-/* HERO: Header + Main con fondo */
-.hero {
+
+/* Header + Main con fondo */
+.container_home {
     display: flex;
     flex-direction: column;
-    background-image: url("imgs/web/home.jpg");
+    background-image: url("../imgs/web/home.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
 
 main {
-    flex-grow: 1; /* Hace que el main ocupe todo el espacio restante */
+    flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -55,6 +57,7 @@ main {
         }
     }
 }
+
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;

@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/cabeceras_index.css">
-    <link rel="stylesheet" href="style.css">
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link href='https://fonts.googleapis.com/css2?family=Italianno&display=swap' rel='stylesheet'>
@@ -14,28 +12,32 @@
     <link
         href='https://fonts.googleapis.com/css2?family=Molengo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap'
         rel='stylesheet'>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="../scripts/header_script.js" defer></script>
 </head>
 
 <body>
-    <div class="hero">
+    <div class="container_home">
         <header>
             <article class="header-logo">
-                <img id="logo" src="./imgs/logo1.png" alt="Logo">
+                <!-- #TODO logo provisional -->
+                <img id="logo" src="../imgs/logo1.png" alt="Logo">
                 <p>P & B</p>
             </article>
             <button class="menu-btn" onclick="toggleMenu()">☰</button>
-            <nav id="header-links">
+            <nav id="header-links" class="oculto">
                 <ul class="nav-list">
-                    <li><a href="/proyecto/index.html">Home</a></li>
-                    <li><a href="/proyecto/pages/about_us.html">About</a></li>
-                    <li><a href="/proyecto/pages/menu.html">Menu</a></li>
-                    <li><a href="/proyecto/pages/galeria.html">Galeria</a></li>
-                    <li><a href="/proyecto/pages/book.html" id="book">Book</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="book.html" class="highlight-link">Book</a></li>
                 </ul>
             </nav>
         </header>
 
+        <!-- #TODO añadir animación de inicio sin cargarnos nada -->
         <main>
             <h1>Benvenuti a <span>Pasta</span> e <span>Basta</span></h1>
         </main>
@@ -43,37 +45,41 @@
 
 
     <footer>
-        <article class="footer-logo"> <!--Articulo para el logo y copyright symbol del footer-->
-            <img src="./imgs/logo1.png" alt="Logo">
-            <p>P & B</p>
+        <article class="footer-logo">
+            <img src="../imgs/logo1.png" alt="Logo">
+            <div class="footer-info">
+                <p>© 2024 Pasta e Basta Ristorante<br>All rights reserved</p>
+            </div>
         </article>
         <article id="footer-links">
             <ul>
                 <li>
                     <span>Quick Links</span>
                 </li>
-                <li><a href="/proyecto/index.html">Home</a></li>
-                <li><a href="/proyecto/pages/about_us.html">About</a></li>
-                <li><a href="/proyecto/pages/menu.html">Menu</a></li>
-                <li><a href="/proyecto/pages/contact_us.html">Contact</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
             </ul>
             <ul>
                 <li>
                     <span>Our Company</span>
                 </li>
-                <li><a href="#about-us">About Us</a></li>
-                <li> Our Story</li>
-                <li>Sustainability</li>
-                <li>Careers</li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Careers</a></li>
             </ul>
             <ul>
                 <li>
                     <span>Connect with us</span>
                 </li>
                 <li><a href="http://facebook.com">Facebook</a></li>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
+                <li><a href="http://instagram.com">Instagram</a></li>
+                <li><a href="http://twitter.com">X</a></li>
+                <li><a href="http://linkedin.com">LinkedIn</a></li>
+                <!-- #TODO añadir iconos si sobra tiempo. https://tabler.io/icons -->
+
             </ul>
         </article>
     </footer>

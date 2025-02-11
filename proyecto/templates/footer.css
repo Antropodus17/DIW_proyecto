@@ -1,3 +1,5 @@
+/* #TODO eliminar código muerto */
+
 footer {
     position: relative;
     background: var(--rojo);
@@ -26,6 +28,10 @@ footer {
 .footer-info > * {
     font-family: "Courier New", Courier, monospace;
     font-size: 1rem;
+}
+
+.footer-info p {
+    margin-right: 10px;
 }
 
 #footer-links {
