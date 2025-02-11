@@ -66,13 +66,3 @@ main {
         }
     }
 }
-
-/* MENÚ HAMBURGUESA */
-.menu-btn {
-    display: none;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
