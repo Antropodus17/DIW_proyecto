@@ -1,22 +1,44 @@
-@import "../variables.css";
-@import "../header.css";
-@import "../footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molengo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
-*{
+@import "../templates/colores.css";
+@import "../templates/fuentes.css";
+@import "../templates/header.css";
+@import "../templates/footer.css";
+
+/* ANIMACIONES COLOR CORREGIDO*/
+.nav-list a::after {
+    background-color: var(--fondo);
+}
+
+.nav-list a:hover {
+    color: var(--fondo) !important;
+}
+
+.highlight-link {
+    border: solid var(--fondo) !important;
+    padding: 4px;
+}
+
+/* #TODO arreglar color, o anadir un borde del color del fondo, algo para que destaque. */
+.highlight-link::after {
+}
+
+.highlight-link:hover {
+    color: var(--fondo) !important;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     background-color: var(--rojo);
-}
-
-#header-links > ul > li > a:hover {
-    color: var(--fondo);
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    opacity: 0.8;
 }
 
 #menu {
@@ -25,7 +47,8 @@ header{
     margin: auto;
 }
 
-#menu1, #menu2 {
+#menu1,
+#menu2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,15 +60,14 @@ header{
     flex-direction: row;
 }
 
-
 #menu2 {
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 50px; /* Reduce el espacio extra a la derecha */
-
 }
 
-#menu1 div, #menu2 div {
+#menu1 div,
+#menu2 div {
     width: 50%;
 }
 
@@ -55,52 +77,55 @@ header{
     flex-direction: column;
 }
 
-#menu1 div h1, #menu2 div h1 {
+#menu1 div h1,
+#menu2 div h1 {
     margin-bottom: 30px; /* Asegura espacio debajo del h1 */
     display: block;
 }
 
-#menu1 div p, #menu2 div p {
+#menu1 div p,
+#menu2 div p {
     margin-top: 20px; /* Añade espacio por encima del p */
 }
 
-#menu1, #menu2 {
+#menu1,
+#menu2 {
     margin-bottom: 0;
 }
 
-#texto1 > h1{
+#texto1 > h1 {
     color: var(--rojo);
 }
 
-#texto1 > p{
+#texto1 > p {
     color: var(--texto);
 }
 
-#menu2 h1, #menu2 p {
+#menu2 h1,
+#menu2 p {
     padding-right: 75px; /* Asegura que ocupe el máximo espacio */
 }
 
-
-#comida1, #comida2 {
+#comida1,
+#comida2 {
     width: 591px;
     height: 400px;
     object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
 }
 
-#comida2{
+#comida2 {
     margin-right: 150px;
-
 }
 
 /* Diseño de los textos dentro de menu1 y menu2 */
-#menu1 h1, #menu1 p{
+#menu1 h1,
+#menu1 p {
     padding-right: 50px;
 }
 
-#texto2 > h1{
+#texto2 > h1 {
     margin-bottom: 200px;
 }
-
 
 /* Estilos específicos para el menu1 */
 #menu1 {
@@ -109,7 +134,7 @@ header{
 
 #menu1 > h1 {
     color: var(--rojo);
-	font-family:var(titulo);
+    font-family: var(titulo);
     margin-bottom: 500px;
 }
 
@@ -119,13 +144,13 @@ header{
 
 h1 {
     font-size: 71px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-weight: 600; /* Semi Bold */
 }
 
-p{
+p {
     font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 /* Estilos específicos para el menu2 */
@@ -134,16 +159,15 @@ p{
     flex-direction: row;
     justify-content: flex-end;
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-    
 }
 
-#menu2 h1, #menu2 p {
+#menu2 h1,
+#menu2 p {
     color: var(--fondo);
     margin-bottom: 0; /* Elimina el margen entre h1 y p */
     padding-bottom: 0; /* Asegúrate de que no haya padding extra */
     justify-content: center;
 }
-
 
 #menu-grid {
     display: grid;
@@ -167,12 +191,11 @@ p{
 .menu-item p {
     margin-top: 10px;
     font-size: 48px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-style: italic;
     color: var(--rojo);
     text-align: center;
 }
-
 
 #menu-buttons {
     margin-top: 20px;
@@ -192,26 +215,26 @@ button {
     color: white;
 }
 
-#curated-offerings{
+#curated-offerings {
     background-color: var(--fondo);
 }
 
-.menu-item img{
+.menu-item img {
     opacity: 0.85;
     width: 355px;
 }
 
-#tituloImgs{
+#tituloImgs {
     display: flex;
     justify-content: center;
     color: var(--rojo);
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     padding: 40px;
     font-size: 50px;
     font-weight: 600; /* Semi Bold */
 }
 
-#boton1{
+#boton1 {
     background-color: var(--fondo);
     color: var(--rojo);
     border-style: solid;
@@ -223,7 +246,7 @@ button {
     color: var(--fondo);
 }
 
-#boton2{
+#boton2 {
     background-color: var(--rojo);
     color: var(--fondo);
     border-style: solid;
@@ -237,25 +260,31 @@ button {
 
 /* Responsive solo para pantallas de máximo 780px */
 @media (max-width: 780px) {
-    #menu1, #menu2 {
+    #menu1,
+    #menu2 {
         flex-direction: column;
         text-align: center;
     }
 
-    #menu1 div, #menu2 div {
+    #menu1 div,
+    #menu2 div {
         width: 100%;
     }
 
-    #menu1{
+    #menu1 {
         display: flex;
         justify-content: center;
     }
 
-    #texto1 h1, #texto1 p, #texto2 h1, #texto2 p {
+    #texto1 h1,
+    #texto1 p,
+    #texto2 h1,
+    #texto2 p {
         margin-right: 0;
     }
 
-    #comida1, #comida2 {
+    #comida1,
+    #comida2 {
         width: 100%;
         max-width: 400px;
     }
@@ -266,15 +295,15 @@ button {
         gap: 10px;
     }
 
-    #menu1 > #texto1{
+    #menu1 > #texto1 {
         margin-left: 50px;
     }
 
-    #menu2 > #comida2{
+    #menu2 > #comida2 {
         margin-left: 180px;
     }
 
-    #menu2 > #texto2{
+    #menu2 > #texto2 {
         margin-left: 100px;
     }
 
