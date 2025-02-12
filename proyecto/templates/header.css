@@ -104,7 +104,7 @@ header {
     transition: color 0.3s ease;
 }
 
-/* #TODO arreglar color */
+/* #TODO arreglar color, o anadir un borde del color del fondo, algo para que destaque. */
 .highlight-link::after {
     content: "";
     position: absolute;
