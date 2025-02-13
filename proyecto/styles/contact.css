@@ -127,3 +127,21 @@ hr {
 	width: 100%;
 	background-color: var(--fondo);
 }
+
+/*ANIMACIONES HEADER*/
+/* IMPORTS DE HEADER Y FOOTER */
+/* #TODO arreglar cambios de color del header en el hover no es el mismo color exacto? */
+header {
+    background-color: var(--rojo);
+}
+
+/* ANIMACIONES COLOR CORREGIDO*/
+.nav-list a::after {
+    background-color: var(--fondo);
+}
+
+.nav-list a:hover {
+    color: var(--fondo) !important;
+}
+
+/*

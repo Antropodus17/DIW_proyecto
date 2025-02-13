@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    /* #TODO cambiar fuente */
 }
 
 body {
@@ -22,8 +21,6 @@ header {
     top: 0;
     left: 0;
 }
-
-/* #TODO el header en el home no tiene el mismo tipo de letra? distinto tamano que las otras páginas? arreglar */
 
 /* Header + Main con fondo */
 .container_home {

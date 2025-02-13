@@ -47,13 +47,13 @@ header {
     background-color: transparent;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    position: relative; 
+    position: relative;
 }
 
 .highlight-link:hover {
     color: var(--rojo);
-    background-color: var(--fondo); 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    background-color: var(--fondo);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .highlight-link::before {
@@ -64,11 +64,11 @@ header {
     width: 0;
     height: 100%;
     background-color: var(--rojo);
-    transition: width 0.3s ease-in-out; 
+    transition: width 0.3s ease-in-out;
 }
 
 .highlight-link:hover::before {
-    width: 100%; 
+    width: 100%;
 }
 
 .title {
@@ -181,8 +181,7 @@ main {
     font-family: "Work Sans", sans-serif;
     align-items: center;
     overflow-wrap: break-word;
-} 
-
+}
 
 @media (max-width: 768px) {
     .title {
