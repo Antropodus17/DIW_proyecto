@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molengo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
 :root {
-    --rojo: #730000;
-    --verde: #005136;
-    --blanco: #fff;
-    --fondo: #fffcf1;
-    --texto: #a47575;
-    --texto-footer: #f1c9c7;
-    --negro: #000;
+	--rojo: #730000;
+	--verde: #005136;
+	--blanco: #fff;
+	--fondo: #fffcf1;
+	--texto: #a47575;
+	--texto-footer: #f1c9c7;
+	--negro: #000;
 }
