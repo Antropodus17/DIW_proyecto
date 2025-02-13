@@ -1,0 +1,19 @@
+@import "../header.css";
+@import "../footer.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--rojo);
+}
+
+#header-links > ul > li > a:hover {
+    color: var(--fondo);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    opacity: 0.8;
+}
