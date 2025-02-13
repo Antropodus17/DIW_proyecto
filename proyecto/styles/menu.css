@@ -172,14 +172,27 @@ p {
 #menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 0px;
     margin-top: 20px;
 }
+
+
+.menu-item img {
+    width: 95%; /* Reduce un poco el tamaño para que haya espacio */
+    max-height: 200px;
+    object-fit: cover;
+    display: block; /* Evita espacios adicionales de inline-block */
+}
+
+
+
 
 .menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0; /* Evita márgenes internos */
+    margin: 0;
 }
 
 .menu-item img {
@@ -237,13 +250,30 @@ button {
 #boton1 {
     background-color: var(--fondo);
     color: var(--rojo);
-    border-style: solid;
-    border-color: var(--rojo);
+    transition: color 0.3s ease;
+}
+
+#boton1::after{
+    content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background-color: var(--rojo);
+    color: var(--rojo);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
 }
 
 #boton1:hover {
-    background-color: var(--rojo);
-    color: var(--fondo);
+
+}
+
+#boton1:hover::after{
+    transform: scaleX(1);
+    background-color: var(--rojo) !important;
 }
 
 #boton2 {
@@ -258,6 +288,7 @@ button {
     color: var(--rojo);
 }
 
+
 /* Responsive solo para pantallas de máximo 780px */
 @media (max-width: 780px) {
     #menu1,
@@ -271,7 +302,11 @@ button {
         width: 100%;
     }
 
-    #menu1 {
+    #comida1{
+        margin-bottom: 25px;
+    }
+
+    #menu1{
         display: flex;
         justify-content: center;
     }
@@ -283,20 +318,23 @@ button {
         margin-right: 0;
     }
 
-    #comida1,
-    #comida2 {
-        width: 100%;
-        max-width: 400px;
+    #comida1, #comida2 {
+        width: 350px;
+    }
+
+    #comida2{
+        margin-top: 25px;
     }
 
     #menu-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
 
     #menu1 > #texto1 {
         margin-left: 50px;
+        margin-bottom: 25px;
     }
 
     #menu2 > #comida2 {
@@ -305,6 +343,8 @@ button {
 
     #menu2 > #texto2 {
         margin-left: 100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .menu-item img {
@@ -318,6 +358,15 @@ button {
 
     p {
         font-size: 16px;
+    }
+
+    .menu-item p {
+        margin-top: 10px;
+        font-size: 35px;
+        font-family: 'Work Sans', sans-serif;
+        font-style: italic;
+        color: var(--rojo);
+        text-align: center;
     }
 
     #menu-buttons {

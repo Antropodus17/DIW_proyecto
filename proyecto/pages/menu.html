@@ -14,19 +14,17 @@
 <body>
     <header>
         <article class="header-logo">
-            <!-- #TODO logo provisional -->
             <img id="logo" src="../imgs/logo1.png" alt="Logo">
             <p>P & B</p>
         </article>
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-        <nav id="header-links" class="oculto">
+        <button class="menu-btn" onclick="document.getElementById('header-links').classList.toggle('oculto')">☰</button>
+        <nav id="header-links">
             <ul class="nav-list">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about_us.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contact_us.html">Contact</a></li>
-                <li><a href="book.html" class="highlight-link">Book</a></li>
+                <li><a href="/proyecto/index.html">Home</a></li>
+                <li><a href="/proyecto/pages/about_us.html">About</a></li>
+                <li><a href="/proyecto/pages/menu.html">Menu</a></li>
+                <li><a href="/proyecto/pages/galeria.html">Galeria</a></li>
+                <li><a href="/proyecto/pages/book.html" id="book">Book</a></li>
             </ul>
         </nav>
     </header>
@@ -87,10 +85,10 @@
         </div>
         <div id="menu-buttons">
             <a href="book.html">
-                <button id="boton1">Savor the Moment</button>
+                <button id="boton1"><span>Savor the Moment</span></button>
             </a>
             <a href="galeria.html">
-                <button id="boton2">Discover the Menu</button>
+                <button id="boton2"><span>Discover the Menu</span></button>
             </a>
         </div>
     </div>
