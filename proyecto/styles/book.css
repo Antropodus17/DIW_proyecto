@@ -18,8 +18,61 @@ body {
 	display: grid;
 	grid-template-rows: min-content auto min-content;
 }
-
 header {
 	background-color: var(--rojo);
-	opacity: 0.9;
+	.nav-list a {
+		color: var(--fondo) !important;
+		opacity: 0.8;
+	}
+	.nav-list a:hover {
+		color: var(--fondo) !important;
+		opacity: 1 !important;
+	}
+
+	.nav-list a::after {
+		color: var(--fondo) !important;
+	}
+
+	.nav-list a:hover::after {
+		color: var(--fondo) !important;
+		background-color: var(--fondo);
+	}
+
+	.highlight-link {
+		opacity: 1 !important;
+	}
+
+	.highlight-link::after {
+		color: var(--fondo) !important;
+	}
+
+	.highlight-link:hover {
+		border-radius: 0 !important;
+	}
+
+	.highlight-link:hover::after {
+		transform: none;
+	}
+}
+
+/* main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+} */
+form {
+	background-color: var(--bs-red);
+	color: var(--fondo);
+	width: 10%;
+	height: 20%;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 3px solid var(--negro);
+	border-radius: 50px; */
+}
+.invisible {
+	display: none;
 }
