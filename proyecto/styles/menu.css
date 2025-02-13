@@ -247,6 +247,8 @@ button {
     font-weight: 600; /* Semi Bold */
 }
 
+#TODO /*AÑADIR ANIMACIONES BOTONES*/
+
 #boton1 {
     background-color: var(--fondo);
     color: var(--rojo);
@@ -358,7 +360,7 @@ button {
 
     p {
         font-size: 16px;
-    }
+    }    
 
     .menu-item p {
         margin-top: 10px;
