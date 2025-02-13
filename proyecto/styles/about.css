@@ -23,53 +23,44 @@ body {
 }
 
 /* IMPORTS DE HEADER Y FOOTER */
-/* #TODO arreglar cambios de color del header en el hover no es el mismo color exacto? */
 header {
     background-color: var(--rojo);
 }
-
-/* ANIMACIONES COLOR CORREGIDO*/
-.nav-list a::after {
-    background-color: var(--blanco);
+.nav-list a {
+    color: var(--fondo) !important;
+    opacity: 0.8;
+}
+.nav-list a:hover {
+    color: var(--fondo) !important;
+    opacity: 1 !important;
 }
 
-.nav-list a:hover {
+.nav-list a::after {
     color: var(--fondo) !important;
 }
 
-/*
-#TODO boton BOOK con animacion nueva
-*/
+.nav-list a:hover::after {
+    color: var(--fondo) !important;
+    background-color: var(--fondo);
+}
 
 .highlight-link {
-    border: 2px solid var(--fondo);
-    color: var(--fondo);
-    background-color: transparent;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    opacity: 1 !important;
+}
+
+.highlight-link::after {
+    color: var(--verde) !important;
 }
 
 .highlight-link:hover {
-    color: var(--rojo);
-    background-color: var(--fondo);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 !important;
 }
 
-.highlight-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--rojo);
-    transition: width 0.3s ease-in-out;
+.highlight-link:hover::after {
+    transform: none;
 }
 
-.highlight-link:hover::before {
-    width: 100%;
-}
+/*FIN DE ANIMACIONES*/
 
 .title {
     font-family: "Work Sans", sans-serif;
