@@ -30,7 +30,7 @@ header {
 
 /* ANIMACIONES COLOR CORREGIDO*/
 .nav-list a::after {
-    background-color: var(--fondo);
+    background-color: var(--blanco);
 }
 
 .nav-list a:hover {

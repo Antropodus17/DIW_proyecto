@@ -104,7 +104,6 @@ header {
     transition: color 0.3s ease;
 }
 
-/* #TODO arreglar color, o anadir un borde del color del fondo, algo para que destaque. */
 .highlight-link::after {
     content: "";
     position: absolute;
@@ -132,6 +131,8 @@ header {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr auto;
+
+        padding: 1rem 0;
     }
     .header-logo {
         grid-row: 1;
