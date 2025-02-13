@@ -1,6 +1,7 @@
 @import "../templates/colores.css";
 @import "../templates/footer.css";
 @import "../templates/header.css";
+@import "../templates/fuentes.css";
 
 header {
 	background-color: var(--rojo);
@@ -12,6 +13,7 @@ header {
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html body {
 	width: 100vw;
 	height: 100vh;
@@ -132,16 +134,38 @@ hr {
 /* IMPORTS DE HEADER Y FOOTER */
 /* #TODO arreglar cambios de color del header en el hover no es el mismo color exacto? */
 header {
-    background-color: var(--rojo);
-}
+	background-color: var(--rojo);
+	.nav-list a {
+		color: var(--fondo) !important;
+		opacity: 0.8;
+	}
+	.nav-list a:hover {
+		color: var(--fondo) !important;
+		opacity: 1 !important;
+	}
 
-/* ANIMACIONES COLOR CORREGIDO*/
-.nav-list a::after {
-    background-color: var(--fondo);
-}
+	.nav-list a::after {
+		color: var(--fondo) !important;
+	}
 
-.nav-list a:hover {
-    color: var(--fondo) !important;
-}
+	.nav-list a:hover::after {
+		color: var(--fondo) !important;
+		background-color: var(--fondo);
+	}
 
-/*
+	.highlight-link {
+		opacity: 1 !important;
+	}
+
+	.highlight-link::after {
+		color: var(--fondo) !important;
+	}
+
+	.highlight-link:hover {
+		border-radius: 0 !important;
+	}
+
+	.highlight-link:hover::after {
+		transform: none;
+	}
+}
