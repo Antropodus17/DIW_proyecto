@@ -1,5 +1,7 @@
-@import "../header.css";
-@import "../footer.css";
+@import "../templates/header.css";
+@import "../templates/footer.css";
+@import "../templates/colores.css";
+@import "../templates/fuentes.css";
 
 *{
     margin: 0;
