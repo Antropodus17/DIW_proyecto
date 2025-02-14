@@ -11,16 +11,16 @@
 
 /* ANIMACIONES COLOR CORREGIDO*/
 .nav-list a::after {
-    background-color: var(--fondo);
+	background-color: var(--fondo);
 }
 
 .nav-list a:hover {
-    color: var(--fondo) !important;
+	color: var(--fondo) !important;
 }
 
 .highlight-link {
-    border: solid var(--fondo) !important;
-    padding: 4px;
+	border: solid var(--fondo) !important;
+	padding: 4px;
 }
 
 /* #TODO arreglar color, o anadir un borde del color del fondo, algo para que destaque. */
@@ -28,360 +28,392 @@
 }
 
 .highlight-link:hover {
-    color: var(--fondo) !important;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	color: var(--fondo) !important;
 }
 
 header {
-    background-color: var(--rojo);
+	.nav-list a {
+		color: var(--fondo) !important;
+		opacity: 0.8;
+	}
+	.nav-list a:hover {
+		color: var(--fondo) !important;
+		opacity: 1 !important;
+	}
+
+	.nav-list a::after {
+		color: var(--fondo) !important;
+	}
+
+	.nav-list a:hover::after {
+		color: var(--fondo) !important;
+		background-color: var(--fondo);
+	}
+
+	.highlight-link {
+		opacity: 1 !important;
+	}
+
+	.highlight-link::after {
+		color: var(--fondo) !important;
+	}
+
+	.highlight-link:hover {
+		border-radius: 0 !important;
+	}
+
+	.highlight-link:hover::after {
+		transform: none;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: var(--rojo);
 }
 
 #menu {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
 }
 
 #menu1,
 #menu2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	margin: 0;
 }
 
 #menu1 {
-    flex-direction: row;
+	flex-direction: row;
 }
 
 #menu2 {
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 50px; /* Reduce el espacio extra a la derecha */
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-right: 50px; /* Reduce el espacio extra a la derecha */
 }
 
 #menu1 div,
 #menu2 div {
-    width: 50%;
+	width: 50%;
 }
 
 #menu1 div:first-child,
 #menu2 div:last-child {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 #menu1 div h1,
 #menu2 div h1 {
-    margin-bottom: 30px; /* Asegura espacio debajo del h1 */
-    display: block;
+	margin-bottom: 30px; /* Asegura espacio debajo del h1 */
+	display: block;
 }
 
 #menu1 div p,
 #menu2 div p {
-    margin-top: 20px; /* Añade espacio por encima del p */
+	margin-top: 20px; /* Añade espacio por encima del p */
 }
 
 #menu1,
 #menu2 {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 #texto1 > h1 {
-    color: var(--rojo);
+	color: var(--rojo);
 }
 
 #texto1 > p {
-    color: var(--texto);
+	color: var(--texto);
 }
 
 #menu2 h1,
 #menu2 p {
-    padding-right: 75px; /* Asegura que ocupe el máximo espacio */
+	padding-right: 75px; /* Asegura que ocupe el máximo espacio */
 }
 
 #comida1,
 #comida2 {
-    width: 591px;
-    height: 400px;
-    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+	width: 591px;
+	height: 400px;
+	object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
 }
 
 #comida2 {
-    margin-right: 150px;
+	margin-right: 150px;
 }
 
 /* Diseño de los textos dentro de menu1 y menu2 */
 #menu1 h1,
 #menu1 p {
-    padding-right: 50px;
+	padding-right: 50px;
 }
 
 #texto2 > h1 {
-    margin-bottom: 200px;
+	margin-bottom: 200px;
 }
 
 /* Estilos específicos para el menu1 */
 #menu1 {
-    background-color: var(--fondo);
+	background-color: var(--fondo);
 }
 
 #menu1 > h1 {
-    color: var(--rojo);
-    font-family: var(titulo);
-    margin-bottom: 500px;
+	color: var(--rojo);
+	font-family: var(titulo);
+	margin-bottom: 500px;
 }
 
 #menu1 > p {
-    color: var(--texto);
+	color: var(--texto);
 }
 
 h1 {
-    font-size: 71px;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 600; /* Semi Bold */
+	font-size: 71px;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 600; /* Semi Bold */
 }
 
 p {
-    font-size: 20px;
-    font-family: "Work Sans", sans-serif;
+	font-size: 20px;
+	font-family: "Work Sans", sans-serif;
 }
 
 /* Estilos específicos para el menu2 */
 #menu2 {
-    background-color: var(--rojo);
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+	background-color: var(--rojo);
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
 
 #menu2 h1,
 #menu2 p {
-    color: var(--fondo);
-    margin-bottom: 0; /* Elimina el margen entre h1 y p */
-    padding-bottom: 0; /* Asegúrate de que no haya padding extra */
-    justify-content: center;
+	color: var(--fondo);
+	margin-bottom: 0; /* Elimina el margen entre h1 y p */
+	padding-bottom: 0; /* Asegúrate de que no haya padding extra */
+	justify-content: center;
 }
 
 #menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-    margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0px;
+	margin-top: 20px;
 }
-
 
 .menu-item img {
-    width: 95%; /* Reduce un poco el tamaño para que haya espacio */
-    max-height: 200px;
-    object-fit: cover;
-    display: block; /* Evita espacios adicionales de inline-block */
+	width: 95%; /* Reduce un poco el tamaño para que haya espacio */
+	max-height: 200px;
+	object-fit: cover;
+	display: block; /* Evita espacios adicionales de inline-block */
 }
-
-
-
 
 .menu-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* Evita márgenes internos */
-    margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0; /* Evita márgenes internos */
+	margin: 0;
 }
 
 .menu-item img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
 }
 
 .menu-item p {
-    margin-top: 10px;
-    font-size: 48px;
-    font-family: "Work Sans", sans-serif;
-    font-style: italic;
-    color: var(--rojo);
-    text-align: center;
+	margin-top: 10px;
+	font-size: 48px;
+	font-family: "Work Sans", sans-serif;
+	font-style: italic;
+	color: var(--rojo);
+	text-align: center;
 }
 
 #menu-buttons {
-    margin-top: 20px;
-    padding: 40px;
-    display: flex;
-    gap: 148px;
-    justify-content: center;
+	margin-top: 20px;
+	padding: 40px;
+	display: flex;
+	gap: 148px;
+	justify-content: center;
 }
 
 button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    background-color: #444;
-    color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #444;
+	color: white;
 }
 
 #curated-offerings {
-    background-color: var(--fondo);
+	background-color: var(--fondo);
 }
 
 .menu-item img {
-    opacity: 0.85;
-    width: 355px;
+	opacity: 0.85;
+	width: 355px;
 }
 
 #tituloImgs {
-    display: flex;
-    justify-content: center;
-    color: var(--rojo);
-    font-family: "Work Sans", sans-serif;
-    padding: 40px;
-    font-size: 50px;
-    font-weight: 600; /* Semi Bold */
+	display: flex;
+	justify-content: center;
+	color: var(--rojo);
+	font-family: "Work Sans", sans-serif;
+	padding: 40px;
+	font-size: 50px;
+	font-weight: 600; /* Semi Bold */
 }
 
 #TODO /*AÑADIR ANIMACIONES BOTONES*/
 
 #boton1 {
-    background-color: var(--fondo);
-    color: var(--rojo);
-    transition: color 0.3s ease;
+	background-color: var(--fondo);
+	color: var(--rojo);
+	transition: color 0.3s ease;
 }
 
-#boton1::after{
-    content: "";
+#boton1::after {
+	content: "";
 	position: absolute;
 	left: 0;
 	bottom: -2px;
 	width: 100%;
 	height: 2px;
 	background-color: var(--rojo);
-    color: var(--rojo);
+	color: var(--rojo);
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: transform 0.3s ease;
 }
 
 #boton1:hover {
-
 }
 
-#boton1:hover::after{
-    transform: scaleX(1);
-    background-color: var(--rojo) !important;
+#boton1:hover::after {
+	transform: scaleX(1);
+	background-color: var(--rojo) !important;
 }
 
 #boton2 {
-    background-color: var(--rojo);
-    color: var(--fondo);
-    border-style: solid;
-    border-color: var(--rojo);
+	background-color: var(--rojo);
+	color: var(--fondo);
+	border-style: solid;
+	border-color: var(--rojo);
 }
 
 #boton2:hover {
-    background-color: var(--fondo);
-    color: var(--rojo);
+	background-color: var(--fondo);
+	color: var(--rojo);
 }
-
 
 /* Responsive solo para pantallas de máximo 780px */
 @media (max-width: 780px) {
-    #menu1,
-    #menu2 {
-        flex-direction: column;
-        text-align: center;
-    }
+	#menu1,
+	#menu2 {
+		flex-direction: column;
+		text-align: center;
+	}
 
-    #menu1 div,
-    #menu2 div {
-        width: 100%;
-    }
+	#menu1 div,
+	#menu2 div {
+		width: 100%;
+	}
 
-    #comida1{
-        margin-bottom: 25px;
-    }
+	#comida1 {
+		margin-bottom: 25px;
+	}
 
-    #menu1{
-        display: flex;
-        justify-content: center;
-    }
+	#menu1 {
+		display: flex;
+		justify-content: center;
+	}
 
-    #texto1 h1,
-    #texto1 p,
-    #texto2 h1,
-    #texto2 p {
-        margin-right: 0;
-    }
+	#texto1 h1,
+	#texto1 p,
+	#texto2 h1,
+	#texto2 p {
+		margin-right: 0;
+	}
 
-    #comida1, #comida2 {
-        width: 350px;
-    }
+	#comida1,
+	#comida2 {
+		width: 350px;
+	}
 
-    #comida2{
-        margin-top: 25px;
-    }
+	#comida2 {
+		margin-top: 25px;
+	}
 
-    #menu-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-    }
+	#menu-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+	}
 
-    #menu1 > #texto1 {
-        margin-left: 50px;
-        margin-bottom: 25px;
-    }
+	#menu1 > #texto1 {
+		margin-left: 50px;
+		margin-bottom: 25px;
+	}
 
-    #menu2 > #comida2 {
-        margin-left: 180px;
-    }
+	#menu2 > #comida2 {
+		margin-left: 180px;
+	}
 
-    #menu2 > #texto2 {
-        margin-left: 100px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+	#menu2 > #texto2 {
+		margin-left: 100px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 
-    .menu-item img {
-        width: 100%;
-        height: auto;
-    }
+	.menu-item img {
+		width: 100%;
+		height: auto;
+	}
 
-    h1 {
-        font-size: 36px;
-    }
+	h1 {
+		font-size: 36px;
+	}
 
-    p {
-        font-size: 16px;
-    }    
+	p {
+		font-size: 16px;
+	}
 
-    .menu-item p {
-        margin-top: 10px;
-        font-size: 35px;
-        font-family: 'Work Sans', sans-serif;
-        font-style: italic;
-        color: var(--rojo);
-        text-align: center;
-    }
+	.menu-item p {
+		margin-top: 10px;
+		font-size: 35px;
+		font-family: "Work Sans", sans-serif;
+		font-style: italic;
+		color: var(--rojo);
+		text-align: center;
+	}
 
-    #menu-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
+	#menu-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
 
-    button {
-        width: auto;
-        max-width: 250px;
-        font-size: 14px;
-    }
+	button {
+		width: auto;
+		max-width: 250px;
+		font-size: 14px;
+	}
 }

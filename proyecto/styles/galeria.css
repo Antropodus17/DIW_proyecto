@@ -3,19 +3,46 @@
 @import "../templates/colores.css";
 @import "../templates/fuentes.css";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
 }
 
-header{
-    background-color: var(--rojo);
-}
+header {
+	background-color: var(--rojo);
+	.nav-list a {
+		color: var(--fondo) !important;
+		opacity: 0.8;
+	}
+	.nav-list a:hover {
+		color: var(--fondo) !important;
+		opacity: 1 !important;
+	}
 
-#header-links > ul > li > a:hover {
-    color: var(--fondo);
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    opacity: 0.8;
+	.nav-list a::after {
+		color: var(--fondo) !important;
+	}
+
+	.nav-list a:hover::after {
+		color: var(--fondo) !important;
+		background-color: var(--fondo);
+	}
+
+	.highlight-link {
+		opacity: 1 !important;
+	}
+
+	.highlight-link::after {
+		color: var(--fondo) !important;
+	}
+
+	.highlight-link:hover {
+		border-radius: 0 !important;
+	}
+
+	.highlight-link:hover::after {
+		transform: none;
+	}
 }
