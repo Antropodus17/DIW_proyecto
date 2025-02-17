@@ -77,7 +77,7 @@ function celdClass(celd, dia) {
 		"border",
 		"border-2",
 		"border-dark",
-		"rounded-3",
+		
 	];
 	if (celd.tagName.toLowerCase() === "th") {
 		celd.classList.add(
