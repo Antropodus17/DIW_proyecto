@@ -10,26 +10,6 @@
 @import "../templates/footer.css";
 
 /* ANIMACIONES COLOR CORREGIDO*/
-.nav-list a::after {
-	background-color: var(--fondo);
-}
-
-.nav-list a:hover {
-	color: var(--fondo) !important;
-}
-
-.highlight-link {
-	border: solid var(--fondo) !important;
-	padding: 4px;
-}
-
-/* #TODO arreglar color, o anadir un borde del color del fondo, algo para que destaque. */
-.highlight-link::after {
-}
-
-.highlight-link:hover {
-	color: var(--fondo) !important;
-}
 
 header {
 	.nav-list a {
@@ -300,9 +280,6 @@ button {
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: transform 0.3s ease;
-}
-
-#boton1:hover {
 }
 
 #boton1:hover::after {
