@@ -80,3 +80,21 @@ form {
 .invisible {
 	display: none;
 }
+
+@media (max-width:768px) {
+	body main{
+		min-height: 100vh;
+		background-color: var(--fondo);
+	}
+	form{
+		min-width: fit-content;
+		min-height: 50vh;
+		;
+		grid-row: 1;
+	}
+	table{
+		min-width: 200px;
+	}
+	footer{margin-top: 60%;}
+	
+}
