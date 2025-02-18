@@ -81,20 +81,20 @@ form {
 	display: none;
 }
 
-@media (max-width:768px) {
-	body main{
+@media (max-width: 768px) {
+	body main {
 		min-height: 100vh;
 		background-color: var(--fondo);
 	}
-	form{
+	form {
 		min-width: fit-content;
 		min-height: 50vh;
-		;
 		grid-row: 1;
 	}
-	table{
-		min-width: 200px;
+	#calendario {
+		display: none;
 	}
-	footer{margin-top: 60%;}
-	
+	footer {
+		margin-top: 40%;
+	}
 }
