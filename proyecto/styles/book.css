@@ -9,9 +9,6 @@
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
 }
-html {
-	background-color: var(--fondo);
-}
 
 html,
 body {
@@ -20,6 +17,7 @@ body {
 }
 body {
 	display: grid;
+
 	grid-template-rows: min-content auto min-content;
 }
 header {
@@ -65,6 +63,9 @@ header {
 	justify-content: space-around;
 	align-items: center;
 } */
+main {
+	background-color: var(--fondo);
+}
 form {
 	background-color: var(--bs-red);
 	color: var(--fondo);
